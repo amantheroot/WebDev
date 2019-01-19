@@ -1,0 +1,18 @@
+{
+  "name": "dummy",
+  "version": "3.14.15",
+  "description": "who cares",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aman",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "sass": "1.13.0"
+  },
+  "devDependencies": {
+    "moment": "^2.22.2"
+  }
+}

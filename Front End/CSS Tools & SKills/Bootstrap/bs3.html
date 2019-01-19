@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Bootstrap Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <style type="text/css">
+    	body {
+  font-size: 62.5%;
+  font-family: arial, sans-serif;
+}
+#nttLogo{
+  height: 100px;
+  width: 100px;
+}
+#websiteTitle{
+  font-size: 10em;
+  vertical-align: middle;
+  font-family: 'Pacifico', cursive;
+  padding-left: 15px;
+  color: #191970;
+}
+#websiteSlogan{
+  font-size: 5.4em;
+}
+/* Carousel Styling */
+.slide1{
+  background-image: url('593244.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url('cscitvan_lg.JPG');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url('satan_wallpaper_background_20439.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-size: 5.4em;
+  font-family: 'Pacifico', cursive;
+  padding-bottom: .4em;
+}
+.carousel-caption p{
+  font-size: 2em;
+}
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<img src="2000px-Flag_of_the_German_Reich_(1935%E2%80%931945).svg.png" id="nazilogo" alt="Nein!">
+			<span id="websiteTitle">GAS THE JEWS</span>
+			<p id="websiteSlogan">Ein Volk, ein Reich, ein Führer</p>
+		</div>
+	</div>
+	<div id="theCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#theCarousel" target-slide-to="0" class="active"></li>
+			<li data-target="#theCarousel" target-slide-to="1"></li>
+			<li data-target="#theCarousel" target-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<div class="slide1"></div>
+				<div class="carousel-caption">
+					<h1>Amazing Games</h1>
+					<p>Millions Of Games For Free!</p>
+					<p><a href="#" class="btn btn-primary btn-sm">Get Them Now!</a></p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="slide2"></div>
+				<div class="carousel-caption">
+					<h1>Cool PCs</h1>
+					<p>Win A PC Every Planck Time!</p>
+					<p><a href="#" class="btn btn-primary btn-sm">Register Now!</a></p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="slide3"></div>
+				<div class="carousel-caption">
+					<h1>Are You Insecure?</h1>
+					<p>Die In Hell For Free!</p>
+					<p><a href="#" class="btn btn-primary btn-sm">Click To Die Now!</a></p>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#theCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#theCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

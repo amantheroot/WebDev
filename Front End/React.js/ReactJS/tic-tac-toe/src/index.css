@@ -1,0 +1,29 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.box {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  font-size: 2em;
+}
+.game {
+  background-color: black;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1px;
+  width: 102px;
+  height: 102px;
+}
+.container {
+  width: 270px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.aside {
+  margin-top: 5px;
+}

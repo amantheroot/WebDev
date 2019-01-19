@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time test</title>
+</head>
+<body>
+	
+    <script type="text/javascript">
+        window.onload = function () {
+            var loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart; 
+            console.log("LoadTime : "+loadTime+"ms");
+        }
+    </script>
+</body>
+</html>

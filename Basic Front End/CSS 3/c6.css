@@ -1,0 +1,94 @@
+#lorem{
+	padding: 20px;/*if only one means all sides if 2 means tb lr if 3 means t lr b if four means t r b l*/
+	/*or you could also do padding-top, padding-bottom, padding-left, padding-right*/
+
+	margin: 10px;
+	color: black;
+
+	border-top: 5px solid black;
+	border-bottom: 5px dotted black;
+	border-left: 5px dashed black;
+	border-right: 5px double black;/*none, groove, ridges, inset and outset are also there*/
+
+	background: #ff9696 url("texture_140_by_sirius_sdz-d2btip9.jpg") repeat;
+}
+
+#fsNormal {
+  font-style: normal;
+}
+
+#fsItalic {
+  font-style: italic;
+}
+
+#fsOblique {
+  font-style: oblique;
+}
+
+#fvNormal {
+  font-variant: normal;
+}
+
+#fvSmallCaps {
+  font-variant: small-caps;
+}
+
+#fwNormal {
+  font-weight: normal;
+}
+
+#fwBold {
+  font-weight: bold;
+}
+
+#fwBolder {
+  font-weight: bolder;
+}
+
+#fwLighter {
+  font-weight: lighter;
+}
+
+#fszMedium {
+  font-size: medium;
+}
+
+#fszXXSmall {
+  font-size: xx-small;
+}
+
+#fszSmall {
+  font-size: small;
+}
+
+#fszXXLarge {
+  font-size: xx-large;
+}
+
+#fszLarge {
+  font-size: large;
+}
+
+#fszPrct {
+  font-size: 200%;
+}
+
+#fsz25pt {
+  font-size: 25pt;
+}
+
+#lhNormal {
+  line-height: normal;
+}
+
+#lh25pt {
+  line-height: 25pt;
+}
+
+#lh200prct {
+  line-height: 200%;
+}
+
+#lh200prct {
+  line-height: 200%;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "dummy",
+  "version": "1.0.0",
+  "description": "Dummy",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack-dev-server",
+    "webpack:prod": "webpack"
+  },
+  "keywords": [],
+  "author": "Aman",
+  "license": "None",
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-preset-es2017": "*",
+    "clean-webpack-plugin": "*",
+    "css-loader": "*",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "*",
+    "html-loader": "*",
+    "html-webpack-plugin": "*",
+    "node-sass": "*",
+    "sass-loader": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-dev-server": "*"
+  }
+}

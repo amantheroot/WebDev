@@ -1,0 +1,33 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function Customer(name, street, city, state, email, balance){
+                this.name = name;
+                this.street = street;
+                this.city = city;
+                this.state = state;
+                this.email = email;
+                this.balance = balance;
+                this.paydownbal = function(amtpaid){
+                    this.balance -= amtpaid;
+                }
+                this.addtobal = function(amtcharged){
+                    this.balance += amtcharged;
+                }
+            }
+
+            var cust1 = new Customer("Mohid", "Housing board", "Hyderabad", "Telangana", "chutiya@gmail.com", 0.00);
+
+            cust1.addtobal(500000);
+
+            Customer.prototype.isCreditAvail = false;
+
+            Customer.prototype.toString = function(){
+                return this.name+" lives at "+this.street+", "+this.city+", "+this.state+". His email is "+this.email+". Credit validity : "+this.isCreditAvail+"<br/>";
+            }
+
+            document.write(cust1.toString(), "<br/>")
+        </script>
+    </body>
+</html>

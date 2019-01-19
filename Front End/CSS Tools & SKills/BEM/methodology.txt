@@ -1,0 +1,18 @@
+B - Block
+E - Element
+M - Modifier
+
+Blocks are standalone elements and their class names must be unique
+eg. <div class="head"></div>  || .head  { }
+
+Elements are the children of blocks which have no standalone qualities,
+their class names are the block names followed by 2 "underscores" and then
+the element name.
+eg. <div class="head"><p class="head__para"></p></div> || .head__para { }
+
+Modifiers are the special properties an element or block might have which must
+be specified in their class name, their class name is the name of block or
+element followed by 2 "dashes" and then the modifier name.
+eg. <div class="head--color-blue"></div> || .head--color-blue { color: blue; }
+
+Don't use Id's.

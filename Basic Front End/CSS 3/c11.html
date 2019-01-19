@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Tutorial</title>
+
+  <link rel="stylesheet" type="text/css" href="c12.css">
+  <link rel="icon" href="007195df20f05557152a28173d202d39%20-%20Copy%20(2).jpg">
+</head>
+
+<body>
+<!-- A div wrapper is often used to define the size and position
+of the page divs and spans should be used only for styling and
+not structural reasons -->
+<div id="wrapper">
+
+  <header>
+    <a href="c9.html">
+      <img id="websiteLogo" alt="LOGO" src="007195df20f05557152a28173d202d39.jpg"/>
+    </a>
+  </header>
+
+  <nav id="horzNav">
+    <p>
+      <a href="https://www.google.co.in/?gfe_rd=cr&dcr=0&ei=drC_WvDhPIjE8wel6pewDQ">Google</a>
+      <a href="https://www.youtube.com/">YouTube</a>
+      <a href="https://in.yahoo.com/">Yahoo</a>
+    </p>
+  </nav>
+
+  <!-- main surrounds the main content of the document
+  You can only have one main -->
+  <main id="content">
+
+    <!-- We surround blocks of content in a document with section tags -->
+    <section>
+      <!-- Section elements should have a heading specific to it -->
+      <h1>Interesting</h1>
+
+      <!-- An article is a self contained block of content that is complete on
+      its own with a heading and content -->
+      <article>
+
+        <h2>Body Language</h2>
+        <p id="para-1">In this article, I’ll cover <span>Arm and Hand Body
+          Language Analysis</span>. I know doubt know someone that reads this article
+          will say to themselves, <span id="common-quote">"I just feel more comfortable with my arms
+          crossed in front of me."</span> Body Language Analysis is used because it
+          has been proven to work for many people.
+        </p>
+        <p id="para-2">
+          If you feel comfortable with a specific body position it is because
+          you are feeling a certain way. Ask yourself, when would you feel
+          comfortable with your arms crossed while enjoying yourself with a
+          loved one? Have you ever seen anyone cross their arms in excitement?
+          Just a few things to think about, as you read this article.
+        </p>
+        <p id="para-3">
+          This article was created because one of my readers asked for it. If
+          you have any <span>questions</span> leave them in the comment section below. I’ll
+          gladly answer any questions that I can.
+        </p>
+        <p id="para-4">
+          When shaking someones hand, if your hand is on top you are trying
+          to dominate and vice versa.
+        </p>
+        <p id="para-5">
+          An equal handshake, in which both people shake in a vertical manor,
+          with equal pressure, is the best way to generate good rapport.
+        </p>
+
+        <dl id="buttons">
+          <dt class="site-button"><a href="https://www.google.co.in/?gfe_rd=cr&dcr=0&ei=drC_WvDhPIjE8wel6pewDQ">Google</a></dt>
+          <dt class="site-button"><a href="https://www.youtube.com/">YouTube</a></dt>
+          <dt class="site-button"><a href="https://in.yahoo.com/">Yahoo</a></dt>
+        </dl>
+
+        <dl id="kids-pics">
+        <dt><a><img  id="cursorchange" src="icon2.jpg" width="60" height="34">
+          <img class="hidden" src="icon2.jpg" width="600" height="338"></a></dt>
+        <dt><a><img src="cat-1285634_960_720.png" width="60" height="34">
+          <img class="hidden" src="cat-1285634_960_720.png" width="600" height="338"></a></dt>
+        <dt><a><img src="pexels-photo-248797.jpeg" width="60" height="34">
+          <img class="hidden" src="pexels-photo-248797.jpeg" width="600" height="338"></a></dt>
+        </dl>
+
+      </article>
+
+    </section>
+
+  </main>
+
+  <div id="sidebar">
+    <ol id="sidebar-list">
+      <li>Random 1</li>
+      <li>Random 2</li>
+      <li>Random 3</li>
+    </ol>
+
+    <ol id="sidebar-list-2">
+      <li>Random 1</li>
+      <li>Random 2</li>
+      <li>Random 3</li>
+    </ol>
+
+    <h3>Favorite Movies</h3>
+      <h4>District 9</h4>
+      <h4>The Matrix</h4>
+      <h4>The Cabin in the Woods</h4>
+
+    <h3>Others</h3>
+      <h4>Minority Report</h4>
+      <h4>Lord of the Rings</h4>
+      <h4>Fargo</h4>
+  </div>
+
+  <div id="filler"></div>
+
+  <footer>
+    <!-- copyright is normally placed in a small tag -->
+    <small>&copy; Copyright 2018 <h6>Please don't steal</h6></small>
+  </footer>
+
+</div> <!-- END OF WRAPPER -->
+
+</body>
+
+</html>

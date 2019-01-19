@@ -1,0 +1,66 @@
+<html>
+    <head>
+            <meta charset="utf-8">
+            <script src="jstut.js"></script>
+         
+            <style type="text/css">
+              body {font-size: 1.6em;}
+              .hidden {display:none;}
+              .show {display:inline !important;}
+              button {
+                border: 2px solid black; background: #E5E4E2;
+                font-size: .5em; font-weight: bold; color: black;
+                padding: .8em 2em;
+                margin-top: .4em;
+              }
+            </style>
+    </head>
+    <body>
+            <div id="sampDiv2"><p>Lorem ipsum dolor sit amet, <em>consectetur adipiscing</em>elit. Proin eget turpis eget quam luctus malesuada ut ac nulla.Suspendisse fermentum magna neque, a auctor felis pretium eget.Fusce ornare feugiat magna, ut faucibus sapien congue ut.Nunc nec fringilla ex, nec varius nisl. Ut eget laoreet nisi. Aenean quis venenatis mauris, at volutpat ante. Donec sollicitudin lacinia ornare. In quis accumsan ligula, id egestas enim.</p>
+                <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing</b>elit. Proin eget turpis eget quam luctus malesuada ut ac nulla. Suspendisse fermentum magna neque, a auctor felis pretium eget.<em>Fusce ornare</em> feugiat magna, ut faucibus sapien congue ut.<b>Nunc nec fringilla</b> ex, nec varius nisl.</p></div>
+            <img src="file:///C:/Users/Sameer/Desktop/007195df20f05557152a28173d202d39.jpg" id = "logo"><br/><br/>
+            <button id="google">Go To Google</button><br/>
+            <button id="for">Forward Page</button><br/>
+            <button id="back">Backward Page</button><br/>
+            <button id="reload">Reload Page</button><br/>
+        <script>
+            document.write("Current URL : "+ window.location.href + "<br/>")
+            document.write("Current HOST : "+ window.location.hostname + "<br/>")
+            document.write("Current PATH : "+ window.location.pathname + "<br/>")
+
+            document.getElementById("google").onclick = function(event){
+                window.location.href = "https://www.google.co.in/?gfe_rd=cr&dcr=0&ei=IrK7Wt6tCYbE8weR6ZuYDQ"
+            }
+
+            document.getElementById("for").onclick = function(event){
+                history.forward();
+            }
+
+            document.getElementById("back").onclick = function(event){
+                history.back();
+            }
+
+            document.getElementById("reload").onclick = function(event){
+                window.location.reload();
+            }
+
+            var pelements = document.getElementsByTagName('p');
+            pelements[1].style.backgroundColor ="#e2bf4d";
+
+            document.childNodes[1].style.backgroundColor = "#a58d3d";
+
+            var sampDiv2 = document.getElementById("sampDiv2");
+
+            sampDiv2.childNodes[0].style.backgroundColor = "#bde234";
+
+            sampDiv2.childNodes[0].childNodes[0].style.backgroundColor = "#6f8229";
+
+            document.write("Node Type : ", sampDiv2.childNodes[0].childNodes[0].nodeType, '<br/>')
+
+            document.write("Node Name : ", sampDiv2.childNodes[0].childNodes[0].nodeName, "<br />");
+            
+            sampDiv2.childNodes[1].childNodes[3].style.backgroundColor = "#BFAFB2";
+            
+        </script>
+    </body>
+</html>

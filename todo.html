@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: sans-serif;
+        counter-reset: listitem;
+      }
+      h1, h2, h3 {
+        text-decoration: underline;
+      }
+      ol {
+        list-style-type: none;
+      }
+      li::before {
+        counter-increment: listitem;
+        content: counter(listitem) ". ";
+      }
+      .done {
+        text-decoration: line-through;
+      }
+      #next {
+        color: red;
+      }
+    </style>
+    <title>TODO TODO TODO TODO TODO TODO TODOOOOOOOOOOOOOOO</title>
+  </head>
+
+  <body>
+    <h1>THE INTERNET</h1>
+    <ol>
+      <h2>Basic Front End</h2>
+      <ol>
+        <li class="done">Learn HTML</li>
+        <li class="done">Do HTML Project</li>
+        <li class="done">Learn CSS</li>
+        <li class="done">Do CSS Project</li>
+        <li class="done">Learn JavaScript</li>
+        <li class="done">Do JavaScript Project</li>
+        <li class="done">Do A Basic Front End Project</li>
+      </ol>
+      <h2>Must Know</h2>
+      <ol>
+        <li class="done">Learn How The Internet Works</li>
+      </ol>
+      <h2>Front End</h2>
+      <ol>
+        <h3>CSS Tools & Skills</h3>
+        <ol>
+          <li class="done">Learn SASS</li>
+          <li class="done">Do SASS Project</li>
+          <li class="done">Learn Bootstrap</li>
+          <li class="done">Learn BEM</li>
+        </ol>
+        <h3>Front End Build Tools</h3>
+        <ol>
+          <li class="done">Learn NPM Scripts</li>
+          <li class="done">Learn Webpack</li>
+        </ol>
+        <h3>JS Skills</h3>
+        <ol>
+          <li class="done">Learn Flow, Typescript</li>
+          <li class="done">Learn ECMAScript</li>
+          <li class="done">Learn Functional Programming</li>
+          <li class="done">Learn Service Workers</li>
+          <li class="done">Do Service Workers Project</li>
+        </ol>
+        <h3>React.js</h3>
+        <ol>
+          <li class="done">Learn ReactJS</li>
+          <li class="done">Do ReactJS Project(s)</li>
+          <li class="done">Learn Styled-Components</li>
+          <li class="done">Do Styled-Components Project</li>
+          <li class="done">Learn Next.js</li>
+          <li class="done">Do Next.js Project</li>
+        </ol>
+        <h3>State Management</h3>
+        <ol>
+          <li class="done">Learn Redux</li>
+          <li class="done">Do Redux Project</li>
+          <li class="done">Learn MobX</li>
+          <li class="done">Do MobX Project</li>
+        </ol>
+        <h3>Vue</h3>
+        <ol>
+          <li class="done">Learn Vue</li>
+          <li class="done">Do Vue Project</li>
+          <li class="done">Learn Vuex</li>
+          <li class="done">Do Vuex Project</li>
+          <li class="done">Learn Nuxt</li>
+          <li class="done">Do Nuxt Project</li>
+        </ol>
+        <h3>Unit Testing</h3>
+        <ol>
+          <li class="done">Learn Jest</li>
+          <li class="done">Learn Mocha</li>
+        </ol>
+        <h3>Responsive</h2>
+          <ol>
+            <li class="done">Learn Responsive Design</li>
+            <li class="done">Do A Responsive Design Project</li>
+          </ol>
+        <li class="done">Revise Everything</li>
+        <li class="done">Do Front End Projects</li>
+      </ol>
+      <h2>Getting Hands Dirty</h2>
+      <ol>
+        <li class="done">Learn About The Market</li>
+        <li class="" id="next">Build A Portfolio Website</li>
+        <li class="">Be Available For Hire</li>
+        <li class="">Acquire Necessities</li>
+        <li class="">Get Assets To Fix The Damage</li>
+        <li class="">Fix The Damage</li>
+      </ol>
+      <h2>Back End</h2>
+      <ol>
+        <h3>Scripting Language</h3>
+        <ol>
+          <li class="">Learn Node.js with all the necessary stuff</li>
+          <li class="">Do Node.js Project(s)</li>
+          <li class="">Learn Express.js with all the necessary stuff</li>
+          <li class="">Do Express.js Project</li>
+          <li class="">Learn Hapi.js with all the necessary stuff</li>
+          <li class="">Do Hapi.js Project</li>
+        </ol>
+        <h3>High-Performance Language</h3>
+        <ol>
+          <li class="">Learn GoLang with all the necessary stuff</li>
+          <li class="">Do GoLang Project(s)</li>
+        </ol>
+        <h3>Functional Language</h3>
+        <ol>
+          <li class="">Learn Clojure with all the necessary stuff</li>
+          <li class="">Do Clojure Project(s)</li>
+        </ol>
+        <h3>Notable Others</h3>
+        <ol>
+          <li class="">
+            Learn AWS Lambda + Serverless with all the necessary stuff
+          </li>
+          <li class="">Do AWS Lambda + Serverless Project(s)</li>
+        </ol>
+        <h3>Data</h3>
+        <ol>
+          <li class="">Learn MySQL</li>
+          <li class="">Do MySQL Project</li>
+          <li class="">Learn Redis</li>
+          <li class="">Do Redis Project</li>
+          <li class="">Learn MongoDB</li>
+          <li class="">Do MongoDB Project</li>
+          <li class="">Learn ElasticSearch</li>
+          <li class="">Do ElasticSearch Project</li>
+          <li class="">Learn Neo4j</li>
+          <li class="">Do Neo4j Project</li>
+          <li class="">Learn RabbitMQ</li>
+          <li class="">Do RabbitMQ Project</li>
+        </ol>
+        <li class="">Do Back End Projects</li>
+      </ol>
+      <h2>Dev Ops</h2>
+      <ol>
+        <h3>Infrastructure Platforms</h3>
+        <ol>
+          <li class="">Learn AWS</li>
+          <li class="">Do AWS Project</li>
+          <li class="">Learn Digital Ocean</li>
+          <li class="">Do Digital Ocean Project</li>
+        </ol>
+        <h3>Server Management</h3>
+        <ol>
+          <li class="">Learn Docker</li>
+          <li class="">Do Docker Project</li>
+        </ol>
+        <h3>CI Pipelines</h3>
+        <ol>
+          <li class="">Learn Jenkins</li>
+          <li class="">Do Jenkins Project</li>
+        </ol>
+        <h3>Docker</h3>
+        <ol>
+          <li class="">Learn Docker Swarm</li>
+          <li class="">Do Docker Swarm Project</li>
+          <li class="">Learn Rancher</li>
+          <li class="">Do Rancher Project</li>
+          <li class="">Learn Kubernetese</li>
+          <li class="">Do Kubernetese Project</li>
+        </ol>
+        <li class="">Do Dev Ops Projects</li>
+      </ol>
+      <h2>Android</h2>
+      <ol>
+        <li class="">Learn JAVA</li>
+        <li class="">Do JAVA Project(s)</li>
+        <li class="">Learn Android</li>
+        <li class="">Do Android Project(s)</li>
+        <li class="">Publish An App</li>
+      </ol>
+      <h2>Social Network</h2>
+      <ol>
+        <li class="">Build Online Presence</li>
+        <li class="">Market Yourself</li>
+      </ol>
+    </ol>
+  </body>
+</html>

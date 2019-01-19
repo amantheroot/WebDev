@@ -1,0 +1,48 @@
+<html>
+    <head>
+            <meta charset="utf-8">
+            <script src="jstut.js"></script>
+         
+            <style type="text/css">
+              body {font-size: 1.6em;}
+              .hidden {display:none;}
+              .show {display:inline !important;}
+              button {
+                border: 2px solid black; background: #E5E4E2;
+                font-size: .5em; font-weight: bold; color: black;
+                padding: .8em 2em;
+                margin-top: .4em;
+              }
+            </style>
+    </head>
+    <body>
+      <div>
+        Enter your Name :
+        <input id="name" name="name" size="30" type="text" 
+        onblur="isthefieldempty(this, document.getElementById('name_help'))"/>
+        <span id="name_help"></span>
+
+      </div>
+        <script>
+            function editnodetext(regex, input, helpid, helpmessage){
+              if(!regex.test(input)) {
+                if(helpid != null)
+                  while(helpid.childNodes[0]){
+                    helpid.removeChild(helpid.childNodes[0]);
+                  }
+                  helpid.appendChild(document.createTextNode(helpmessage));
+                }else {
+                  if(helpid != null){
+                  while(helpid.childNodes[0]){
+                    helpid.removeChild(helpid.childNodes[0]);
+                  }
+                }
+              }
+            }
+            
+            function isthefieldempty(inputfield, helpid){
+              return editnodetext(/^[A-Za-z\.\' \-]{1,15}\s?[A-Za-z\.\' \-]{1,15}\s?[A-Za-z\.\' \-]{1,15}/, inputfield.value, helpid, "*Field Is Required");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+    <head></head>
+    <body>
+        <p id="sayHello"></p>
+        <script>
+            var yourName = prompt('Enter your name');
+            if (yourName === ""){
+                alert("Please enter the name next time")
+            }else{
+                document.getElementById("sayHello").innerHTML = "Hello " + yourName;
+            }
+        </script>
+    </body>
+</html>

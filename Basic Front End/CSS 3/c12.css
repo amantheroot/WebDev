@@ -1,0 +1,226 @@
+a:hover{
+	color: green;
+}
+a:active{
+	color: red;
+}
+a:visited{
+	color: grey;
+}
+
+body{
+	background-color: #8dd2f4;
+}
+
+div#wrapper{
+	margin: 0 auto;
+	background-color: white;
+	width: 98%;
+
+}
+
+header{
+	display: block;
+	padding: 0 0 10px 0;
+}
+
+#websiteLogo{
+	padding: 6px 0 0 6px;
+}
+
+#horzNav{
+	display: block;
+	padding: 5px 20px 5px 0px;
+	background-color: #848d91;
+}
+
+#horzNav a{
+	text-decoration: none;
+	color: white;
+	padding: 0 0 0 20px;
+}
+
+#horzNav a:hover{
+	color: #a7e0f9;
+}
+
+main{
+	padding: 10 10 20 20px;
+	float: left;
+	width: 80%;
+}
+
+#sidebar{
+	float: right;
+	padding: 20 10 0 10px;
+	width: 20%;
+	height: auto;
+	background-color: #85f2a9;
+}
+#sidebar-list{
+	padding-right: 10px;
+}
+
+h3{
+	text-align: center;
+}
+
+h4{
+	padding-left: 5%; 
+}
+
+h2{
+	padding-left: 2%;
+	font-size: 1em;
+}
+
+#para-1{
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: left;
+	word-spacing: .4em;
+
+}
+#para-2{
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: right;
+
+}
+#para-3{
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: center;
+
+}
+h1{
+	text-align: center;
+}
+
+#para-4{
+	padding-left: 2%;
+	padding-right: 2%;
+	text-indent: 3em;
+}
+
+#para-5{
+	letter-spacing: .2em;
+}
+
+footer{
+	clear: both;
+	background-color: #262a30;
+	color: white;
+	padding: 10px;	
+}
+h6{
+	float: right;
+}
+
+
+#sidebar-list{
+	list-style-type: upper-roman;
+	list-style-position: outside;
+}
+
+#sidebar-list-2{
+	list-style-type: upper-roman;
+	list-style-position: inside;
+}
+p#para-1:before{
+	content: "*";
+}
+
+p#para-5:after{
+	content: "//"
+}
+h3{
+	font-size: .9em;
+	counter-increment: num;
+}
+h4{
+	font-size: .7em;
+	counter-increment: sub 2;
+}
+h3:before{
+	content: counter(num) ". ";
+}
+h4:before{
+	content: counter(num) "." counter(sub) " ";
+}
+
+#para-2:first-letter{
+	font-size: 24pt;
+}
+
+#para-4:first-line{
+	background-color: blue;
+}
+
+span:first-child{
+	background-color: purple;
+}
+
+p:last-child{
+	background: green;
+}
+
+span:nth-child(2){
+	background-color: red;
+}
+
+h4:hover{
+	background-color: green;
+}
+
+#common-quote{
+	cursor: pointer;/* We can change the cursor when an element is hovered over
+                       pointer, crosshair, move, text, wait, progress, help, url(samp.cur)
+                                                                                          */
+}
+
+#cursorchange{
+	cursor: crosshair;
+}
+
+#para-3{
+	outline: 2px solid red;
+}
+#para-4{
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+dl#buttons{
+	width: 150px;
+}
+
+dt.site-button{
+	text-align: center;
+	margin-bottom: 5px;
+}
+dt.site-button a{
+	text-decoration: none;
+	color: white;
+	display:block;
+}
+
+dt.site-button a:link{
+	background-color: #b8babc;
+	border: 3px solid black;
+	border-radius: 5px;
+}
+dt.site-button a:hover{
+	background-color: #535456;
+}
+
+dl#kids-pics a img.hidden{
+	visibility: hidden;
+	position: absolute;
+	left: 120px;
+	top: 400px;
+}
+
+dl#kids-pics a:hover img.hidden{
+	visibility: visible;
+}

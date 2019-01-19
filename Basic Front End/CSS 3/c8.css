@@ -1,0 +1,93 @@
+#parent-div{
+	background-color: #b2cfff;
+	border: 0.1em solid #00173d;/*Unit types- px(pixels), pt(points-[72 pts = 1 inch]), em(em is current font size), %(percenr[100% = current font size]))*/
+}
+/*Block Elements(elements which need a break </>, they are usually big)-
+article, aside, blockquote, body, br, botton, canvas, caption, col, colgroup, dd, div, dl, dt, embed,
+fieldset, figcaption, figure, footer, form, h1 - h6, header, hgroup, hr, li, map, object, ol,
+output, p, pre, section, table, tbody, textarea, tfoot, th, thead, tr, ul, video
+*/
+
+/*Inline Elements(elements which don't need a break, they are usually small)-
+a, abbr, address, area, audio, bm, cite, code, del, details, dfn, command, datalist, em, font, i,
+ iframe, img, input, ins, kbd, label, legend, link, mark, meter, nav, optgroup, option, q, small,
+  select, source, span, strong, sub, summary, sup, tbody, td, time, var
+*/
+
+#default{
+	background-color: #aaffb4;
+}
+
+#centered{
+	background-color: #fc4949;
+	margin: auto;
+	width: 26%;
+}
+#centered-text{
+	text-align: center;
+}
+
+#top-left-pos{
+	background-color: #e892e6;
+	border: 0.1em solid #750e72;
+	position: absolute;
+	width: 200px;
+	height: 45px;
+	z-index: 4;
+}
+
+#bottom-right-tl-parent{
+	background-color: #ffffff;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	margin-bottom: 2px;
+}
+
+#top-right-pos{
+	background-color: #fffa7a;
+	border: 0.1em solid #d8d22f;
+	position: absolute;
+	width: 200px;
+	height: 45px;
+	z-index: 3;
+	right: 8px;
+
+}
+
+#bottom-left-tr-parent{
+	background-color: #ffffff;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	margin-bottom: 2px;
+}
+
+#fixed-pos{
+	position: fixed;
+	background-color: #7ef7f3;
+	border: 0.1em solid #219995;
+	width: 100%;
+	text-align: center;
+	left: 0px;
+}
+#relative-1{
+	background-color: pink;
+	border: 0.2em solid black;
+	height: 100px;
+}
+
+#relative-2{
+	position: relative;
+	left: 50px;
+	top: 15px;
+	width: 300px;
+	background-color: pink;
+	border: 0.2em solid black;
+	height: 100px;
+}
+
+img[src="kula-gumowa-zbiornik-sanitarnego-oryginal.jpg"]{
+	float: left;
+	padding: 10px;
+}

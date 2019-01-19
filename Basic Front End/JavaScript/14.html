@@ -1,0 +1,64 @@
+<html>
+    <head>
+            <meta charset="utf-8">
+            <script src="jstut.js"></script>
+         
+            <style type="text/css">
+              body {font-size: 1.6em;}
+              .hidden {display:none;}
+              .show {display:inline !important;}
+              button {
+                border: 2px solid black; background: #E5E4E2;
+                font-size: .5em; font-weight: bold; color: black;
+                padding: .8em 2em;
+                margin-top: .4em;
+              }
+            </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            var cust1 = {
+                name: "Aman Kumar",
+                age: 16,
+                street: "Road no.5",
+                city: "Hyderabad",
+                colony: "Asbestos",
+                state: "Telangana",
+                balance: 25000,
+                paydownbal: function(amtpaid){
+                    this.balance -= amtpaid;
+                },
+                addupbal: function(amtcharged){
+                    this.balance += amtcharged;
+                }
+            }
+
+            document.write("Name : ", cust1.name, "<br/>");
+            cust1.street = "Road no.6"
+            document.write("Street : ", cust1.street, "<br/>");
+            cust1.country = "India"
+            document.write("Country : ", cust1.country, "<br/>");
+            delete cust1.colony;
+            
+            for(prop in cust1){
+                if(cust1.hasOwnProperty(prop)){
+                    document.write(prop, "<br/>")
+                }
+            }
+
+            document.write("Street in cust1 : ", "street" in cust1, "<br/>")
+            document.write("Colony in cust1 : ", "colony" in cust1, "<br/>")
+
+            function getinfo(custer){
+                return cust1.name+" is "+cust1.age+" years old, and lives at "+cust1.street+", "+cust1.city+", "+cust1.state+", "+cust1.country+". Rs."+cust1.balance+" is his balance.";
+            }
+
+            document.write(getinfo(cust1), "<br/>")
+
+            cust1.paydownbal(14000);
+            cust1.addupbal(5000);
+            document.write("Oops! his balance is actually now Rs.", cust1.balance, "<br/>")
+        </script>
+    </body>
+</html>

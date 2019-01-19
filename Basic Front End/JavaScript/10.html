@@ -1,0 +1,73 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function arrays(arraycheck, value){
+                for(i=0; i< arraycheck.length; i++){
+                    if(arraycheck[i] === value){
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+            var arrayw = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+            document.write("InArrat : ", arrays(arrayw, 0), "<br/>")
+
+            function rand(value){
+                var ra = Math.floor(Math.random()*100 +1);
+                var i = 0;
+                while(ra != value){
+                    i++;
+                    var ra = Math.floor(Math.random()*100 +1);
+                }
+                return i;
+            }
+            document.write("Times repeated is : ", rand(45), "<br/>")
+
+            function fu(fun, num){
+                return fun(num);
+            }
+
+            function times12(nu){
+                return nu*12;
+            }
+
+            document.write("Function in a function : ", fu(times12, 12), "<br/>")
+
+            var f = function(num2){
+                return num2*num2;
+            }
+            document.write("var func : ", fu(f, 14), "<br/>")
+
+            function noarg(){
+                var product = 1;
+                for(i=0; i<arguments.length; i++){
+                    product = arguments[i]*product;
+                }
+                return product;
+            }
+            document.write("Product : ", noarg(1, 2, 3, 4, 5, 6), "<br/>")
+
+            function noret(arrayo){
+                var newarray = [];
+                for(i=0; i<arrayo.length; i++){
+                    newarray.push(arrayo[i]*arrayo[i]);
+                }
+                return newarray;
+            }
+            document.write("Squares : ", noret([1, 2, 3, 4, 5, 6, 7]).toString(), "<br/>")
+
+
+            function factorial(num4){
+                if(num4<=1){
+                    return 1;
+                }else {
+                    return num4*factorial(num4 - 1)
+                }
+            }
+
+            document.write("Factorial of 20 : ", factorial(20), "<br/>")
+        </script>
+    </body>
+</html>

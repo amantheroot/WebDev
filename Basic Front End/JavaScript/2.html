@@ -1,0 +1,66 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            document.write(~5,"<br/>")
+            document.write("234 + 4 = " + 234 + 4 + "<br/>")//+ treats the function as a string and , distinguishes it
+            document.write("234 + 4 = ", 234+4, "<br/>")
+            document.write("234 - 4 = ", 234-4, "<br/>")
+            document.write("234 * 4 = ", 234*4, "<br/>")
+            document.write("234 / 4 = ", 234/4, "<br/>")
+            document.write("234 % 4 = ", 234%4, "<br/>")
+
+            document.write("Maximum value = ", Number.MAX_VALUE, "<br/>")
+            document.write("Minimum value = ", Number.MIN_VALUE, "<br/>")
+
+            precisiontest = 0.1000000000000001;
+            document.write(precisiontest + 0.1000000000000001, "<br/>" )
+
+            var deci = 1294.12315512;
+            document.write("round off : ", ((deci)/10000).toFixed(2), "<br/>")
+
+            var ra = 7;
+            document.write("ra = ", ra, "<br/>")
+            document.write("ra++ = ", ra++, "<br/>")
+            document.write("++ra = ", ++ra, "<br/>")
+            document.write("ra-- = ", ra--, "<br/>")
+            document.write("--ra = ", --ra, "<br/>")
+
+            var ra2 = 25;
+            document.write("ra2 = ", ra2, "<br/>")
+            document.write("ra2 += 5 = ", ra2+= 5, "<br/>")
+            document.write("ra2 -= 5 = ", ra2-=5, "<br/>")
+            document.write("ra2 *= 5 = ", ra2*=5, "<br/>")
+            document.write("ra2 /= 5 = ", ra2/=5, "<br/>")
+            document.write("3+5*25 = ", 3+5*25, "<br/>")
+            document.write("(3 + 5)*25 = ", (3 +5)*25, "<br/>")
+
+            document.write("Euler's number = ", Math.E, "<br/>")
+            document.write("PI = ", Math.PI, "<br/>")
+
+            document.write("Mod of -8 = ", Math.abs(-8), "<br/>")
+
+            document.write("Round off to top of 8.45 is ", Math.ceil(8.45), "<br/>")
+            document.write("Round off to bottom of 8.45 is ", Math.floor(8.45), "<br/>")
+            document.write("Round off of 8.45 is", Math.round(8.45), "<br/>")
+
+            document.write("100, 99", "<br/>")
+            document.write("Max = ", Math.max(100, 99), "<br/>")
+            document.write("Min = ", Math.min(100, 99), "<br/>")
+
+            document.write("Log 10 to base 10 = ", Math.log10(10), "<br/>")
+            document.write("Log 10 = ", Math.log(10), "<br/>")
+            document.write("Log e = ", Math.log(Math.E), "<br/>")
+
+            document.write("4 to the power 5 is ", Math.pow(4, 5), "<br/>")
+            document.write("Square root of 100 is ", Math.sqrt(100), "<br/>")
+            document.write("Cube root of 100 is ", Math.cbrt(100), "<br/>")
+            
+            document.write("Random number from 1 to 10 is ", Math.floor(Math.random()*10 + 1), "<br/>")
+
+            document.write("Convert \"3.456\" into a number ", Number("3.456"), "<br/>")
+            document.write("Convert \"6\" into an integer - ", parseInt("6"), "<br/>")
+            document.write("Convert \"3.14\" into a float - ", parseFloat("3.14"), "<br/>")
+        </script>
+    </body>
+</html>

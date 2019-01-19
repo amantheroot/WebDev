@@ -1,0 +1,25 @@
+div.little-brain-clip{
+	position: absolute;
+	width: 100px;
+	clip:rect(0px 100px 100px 0px);
+}
+
+div.little-brain-small{
+position: absolute;
+	width: 100px;
+	height: 100px;	
+}
+
+div.overflow-visible{
+	top: 250px;
+	overflow: visible;
+}
+div.overflow-hidden{
+	top: 500px;
+	overflow: hidden;
+}
+
+div.overflow-scroll{
+	top: 700px;
+	overflow: scroll;
+}

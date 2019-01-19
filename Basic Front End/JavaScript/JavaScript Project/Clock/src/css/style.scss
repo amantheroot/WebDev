@@ -1,0 +1,25 @@
+@import "partials/variables";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.clock {
+  width: $big_radius;
+  height: $big_radius;
+  margin: auto;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clock__display {
+  width: $small_radius;
+  height: $small_radius;
+  border-radius: 50%;
+  background-color: white;
+}

@@ -1,0 +1,126 @@
+<html>
+    <head>
+            <meta charset="utf-8">
+            <script src="jstut.js"></script>
+         
+            <style type="text/css">
+              body {font-size: 1.6em;}
+              .hidden {display:none;}
+              .show {display:inline !important;}
+              button {
+                border: 2px solid black; background: #E5E4E2;
+                font-size: .5em; font-weight: bold; color: black;
+                padding: .8em 2em;
+                margin-top: .4em;
+              }
+            </style>
+    </head>
+
+    <body>
+        <script>
+            function openalert(mess){
+                alert(mess);
+            }
+        </script>
+        <a href="JavaScript:void(0)" onclick="alert('HI!')">Click Me</a><br/>
+        <a href="JavaScript:void(0)" onclick="openalert('Fuck you!')">Click Me Too!</a><br/><br/>
+
+        <a href="JavaScript:void(0)" onmouseover="this.style.color='red', this.text='Thank you!';" onmouseout="this.style.color='blue', this.text='Make me bleed';" onmousedown="this.text='STOP IT!', this.style.color='black';" onmouseup="this.text='Thank you!', this.style.color='red'" ondblclick="this.text='Ouch! that hurt', this.style.color='green'">Make me bleed</a>
+        <br/>
+        <br/>
+        <input type="text" id="RA" onchange="var datent= document.getElementById('RA').value; alert('Did you just type ' + datent + '?!')"><br/><br/>
+
+        <form action="#" id="sampForm">
+            <input id = 'charInput' type="text">
+            <p id="Keydata">Key Data Here</p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form><br/>
+
+        <img src="file:///C:/Users/Sameer/Desktop/007195df20f05557152a28173d202d39.jpg" id="logo">
+        <button id="logobutton">Get Logo</button><br/>
+        <input id="mouseinput" type="text" size="30"><br/>
+
+        Mouse X: <input id="mousex" type="text"><br/>
+        Mouse Y: <input id="mousey" type="text"><br/> 
+
+        <button id="clearinputs">Clear inputs</button><br/>
+
+        <script>
+            function getchar(event){
+                if(event.which == null){
+                    return String.fromCharCode(event.keyCode);
+                }else if(event.which != 0 && event.charCode != 0){
+                    return String.fromCharCode(event.which);
+                }else {
+                    return null;
+                }
+            }
+
+            document.getElementById('charInput').onkeypress = 
+            function(event){
+                var char = getchar(event || window.event)
+                if(!char) return false;
+
+                document.getElementById('Keydata').innerHTML = char + " was clicked";
+                return true;
+            }
+
+            document.getElementById('charInput').onfocus =
+            function(event){
+                document.getElementById('Keydata').innerHTML = "Concentrate!"
+            }
+
+            document.getElementById('charInput').onselect =
+            function(event){
+                document.getElementById('Keydata').innerHTML = "Text Selected"
+            }
+
+            document.getElementById('logobutton').onclick = 
+            function(event){
+                document.getElementById("logo").className = "show";
+            }
+            document.getElementById('logo').onclick = 
+            function(event){
+                document.getElementById("logo").className = "hidden";
+            }
+
+            document.getElementById('logo').onmouseover = 
+            function(event){
+                document.getElementById('logo').src = "file:///C:/Users/Sameer/Desktop/007195df20f05557152a28173d202d39%20-%20Copy.jpg";
+                document.getElementById('mouseinput').value = "Mouse over image"
+            }
+
+             document.getElementById('logo').onmouseout = 
+            function(event){
+                document.getElementById('logo').src = "file:///C:/Users/Sameer/Desktop/007195df20f05557152a28173d202d39.jpg";
+                document.getElementById('mouseinput').value = "Mouse out of image"
+            }
+
+            document.body.onmousemove = function(e){
+                e = e || window.event;
+                var pagex = e.pageX;
+                var pagey = e.pageY;
+
+                if(pagex === undefined){
+                    pagex = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+                }
+                if(pagey === undefined){
+                    pagey = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+                }
+
+                document.getElementById("mousex").value = pagex;
+                document.getElementById("mousey").value = pagey;
+            }
+
+            document.getElementsById('clearinputs').onclick = function(event){
+                    var inpus = document.getElementsByTagName('input');
+                    for(i=0; i<inpus.length; i++){
+                        if(inpus[i].type = "text"){
+                            inpus[i].value = "";
+                        }
+                    }
+                }
+        </script>
+    </body>
+</html>

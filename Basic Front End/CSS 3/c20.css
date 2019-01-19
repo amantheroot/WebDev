@@ -1,0 +1,38 @@
+div#lorem{
+	height: 150px;
+	width: 450px;
+	border: 2px solid black;
+	overflow: hidden;
+
+	columns: 3;
+	-webkit-columns: 3;
+	-o-columns: 3;
+	-ms-columns: 3;
+	-moz-columns: 3;
+
+	column-rule: 2px dashed black;
+	-webkit-column-rule: 2px dashed black;
+	-o-column-rule: 2px dashed black;
+	-ms-column-rule: 2px dashed black;
+	-moz-column-rule: 2px dashed black;
+}
+
+#container{
+	height: 150px;
+	width: 450px;
+	border: 2px solid black;
+}
+
+#container{
+	display: -webkit-box;
+}
+
+#div1{
+	-webkit-box-flex: 2;
+}
+#div2{
+	-webkit-box-flex: 4;
+}
+#div3{
+	-webkit-box-flex: 3;
+}

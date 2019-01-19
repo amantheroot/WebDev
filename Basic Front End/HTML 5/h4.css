@@ -1,0 +1,84 @@
+h1{
+	color: #4b7ccc;
+	font-family: arial;
+}
+
+a{
+	font-family: arial;
+	color: blue;
+}
+
+a:hover {
+	color: green;
+}
+a:active {
+	color: red;
+}
+a:visited {
+	color: #a0bbe8;
+}
+
+body{
+	background-color: #e0ecff;
+}
+
+div#wrapper{
+	margin: auto;
+	background-color: #ffffff;
+	width: 1200px;
+	
+}
+
+header{
+	display: block;
+	padding: 0px 0px 70px 0px;
+}
+
+#websitelogo{
+	float: left;
+}
+
+#horznav{
+	display: block;
+	background-color: #3d434c;
+	padding: 10px 20px 10px 0px;
+}
+#horznav a{
+	color: white;
+	text-decoration: none;
+	padding: 0 0 0 20px;
+}
+
+main{
+	padding: 10px 20px 20px 20px;
+}
+aside{
+	background-color: #e0ecff;
+}
+
+#typesoflistsul{
+	list-style-image: url("icon.ico"); /*circles squares discs images */
+}
+
+#typesoflistsol{
+	list-style-type: upper-roman; /*Ordered list types have many options
+decimal, decimal-leading-zero, lower-roman, upper-roman, lower-latin, upper-latin, lower-alpha, upper-alpha, lower-greek, armenian, georgian */
+}
+#listinlistol{
+	list-style-type: lower-roman;
+}
+
+#tabledata{
+	width: 500px;
+	border: 3px solid black;
+}
+
+#tabledata td, th{
+	border: 1px solid black;
+}
+
+footer{
+	background-color: #3d434c;
+	color: #ffffff;
+	padding: 10px;
+}

@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var curdate = new Date();
+
+            document.write("Date : ", curdate.getDate(), "<br/>")
+            document.write("Year : ", curdate.getFullYear(), "<br/>")
+            document.write("Month : ", curdate.getMonth(), "<br/>")
+            document.write("Day : ", curdate.getDay(), "<br/>")
+            document.write("Time : ", curdate.getHours(), ":", curdate.getMinutes(),
+             ":", curdate.getSeconds(), ":", curdate.getMilliseconds(), "<br/>")
+
+             var mybd = new Date("December 11, 2015")
+
+             var msforbd = mybd.getTime();
+             var timenow = curdate.getTime();
+             var tillmybd = msforbd - timenow;
+
+             document.write("Days till my birth day = ", (tillmybd/(1000*60*60*24)).toFixed(2), "<br/>")
+        </script>
+    </body>
+</html>

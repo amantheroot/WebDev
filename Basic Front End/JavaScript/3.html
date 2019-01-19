@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var lnstr = "Long long " + "ago, there " + "lived " + "a " + "king."
+            document.write(lnstr, "<br/>")
+            document.write("Length of string : ", lnstr.length, "<br/>")
+            document.write(lnstr.slice(15, 28), "<br/>")
+            document.write(lnstr.slice(10), "<br/>")
+            document.write(lnstr.substr(15, 5), "<br/>")
+            document.write(lnstr.replace("king", "prince"), "<br/>")
+            document.write("Character at index 18 : ", lnstr.charAt(18), "<br/>")
+            lnstr = lnstr.trim();
+            document.write(lnstr.toUpperCase(), "<br/>")
+            document.write(lnstr.toLowerCase(), "<br/>")
+        </script>
+    </body>
+</html>

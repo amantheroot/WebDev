@@ -1,0 +1,292 @@
+@import "compass";
+@import "partials/variables";
+@import "partials/normalize";
+@import "partials/mixins";
+@import "partials/base";
+@import "compass/css3";
+
+#banner{
+  padding: 10px;
+  padding-bottom: 0px;
+}
+ 
+#logo {
+  width: 24px;
+  height: auto;
+}
+ 
+#logo-text {
+  vertical-align: 50%;
+  color: #00647D;
+  font-weight: bold;
+}
+ 
+#search-input{
+  width: 302px;
+  vertical-align: 50%;
+}
+ 
+#search-button{
+  vertical-align: 80%;
+  background-color: #00647D;
+  padding: 5px 12px;
+  font: 13px sans-serif;
+  text-decoration: none;
+  border: 1px solid #000;
+  border-color: #aaa #444 #444 #aaa;
+  color: #FFF;
+}
+ 
+#horz-nav {
+  background-color: #00647D;
+  max-width: 800px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+ 
+#horz-nav p {
+  padding-top: 10px;
+}
+ 
+#horz-nav p a{
+  text-decoration: none;
+  color: #FFF;
+  padding-left: 10px;
+}
+ 
+#horz-nav p a:hover{
+  color: $orange;
+}
+ 
+#sidebar-left{
+  float: left;
+  width: 109px;
+  padding-left: 10px;
+}
+ 
+// You'll want to define navigation width for items in the ul
+ 
+#vert-nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7em;
+  width: 80px;
+}
+ 
+#vert-nav ul li a{
+  text-decoration: none;
+  color: #00647D;
+}
+ 
+#sidebar-right{
+  float: right;
+  width: 213px;
+}
+ 
+.right-sidebar-title{
+  color: #00647D;
+  font-weight: bold;
+}
+ 
+#content {
+  margin: 0px 213px 0px 109px;
+  padding: 0px;
+}
+ 
+#content section h2{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #00647D;
+  line-height: 1em;
+}
+ 
+#feature-image {
+  height: auto;
+  width: 100%;
+  max-width: 440px;
+  background: $gray;
+}
+ 
+.right-sidebar-image {
+  height: 93px;
+  width: 179px;
+  background: $gray;
+  margin: 12px 0px;
+}
+ 
+footer {
+  clear: both;
+  background: #00647D;
+  color: #FFF;
+  padding: 10px;
+}
+
+.left-sidebar-links {
+	a {
+		display: block;
+		color: $main-green;
+		opacity: .7;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+.left-sidebar-links {
+	a {
+		border: {
+			top: none;
+			bottom: 2px solid $main-green;
+		}
+	}
+}
+
+#riddle {
+	padding: 20px;
+	background: $alice-blue;
+}
+#riddle-answer {
+	@extend #riddle;
+	margin-top: 10px;
+}
+
+%dotted-box {
+	border: 2px dotted $duke-blue;
+	margin: 10px 0px;
+}
+
+#riddle-answer {
+	@extend %dotted-box;
+}
+
+.left-sidebar-links {
+	a {
+		border-color: lighten($main-green, 70%);
+		border-color: darken($main-green, 70%);
+	}
+}
+
+#search-button:hover {
+	background-color: complement($main-green);
+	background-color: adjust-hue($main-green,90dg);
+}
+
+#vert-nav ul li:nth-child(1) {
+	background-color: desaturate($orange, 50%);
+}
+#vert-nav ul li:nth-child(2) {
+	background-color: saturate($orange, 0%);
+}
+#vert-nav ul li:nth-child(3) {
+	background-color: fade-out($orange, .6);
+}
+#vert-nav ul li:nth-child(4) {
+	background-color: fade-in($orange, .5);
+}
+#vert-nav ul li:nth-child(5) {
+	background-color: rgba(0,0,255,.5);
+}
+#vert-nav ul li:nth-child(6) {
+	background-color: mix($red,$blue,50%);
+}
+#vert-nav ul li:nth-child(7) {
+	background-color: grayscale($orange);
+}
+#vert-nav ul li:nth-child(8) {
+	background-color: adjust-color($main-green,$red:255,$blue:0,$green:0);
+}
+#vert-nav ul li:nth-child(9) {
+	background-color: adjust-color($main-green,$hue:120,$saturation:100,$lightness:50);
+}
+#vert-nav ul li:nth-child(10) {
+	background-color: shade($green,70%);
+}
+#vert-nav ul li:nth-child(11) {
+	background-color: tint($green,70%);
+}
+
+#riddle-answer {
+	@include border-radius(7px);
+	@include box-shadow(7px 7px 7px $gray);
+}
+
+#main-title {
+	@include text-shadow(5px 5px 5px rgba(blue,0.5));
+}
+
+%main-green-gradient {
+	@include background-image(linear-gradient(left,$orange 70%,$white));
+}
+footer {
+	@extend %main-green-gradient;
+}
+#horz-nav {
+	@extend %main-green-gradient;	
+}
+
+img[alt="Programming Frameworks"] {
+	content: image-url("image.png");
+
+	width: image-width('./images/image.png');
+	height: image-height('./images/image.png');
+}
+
+#logo {
+	@include scale(1.5,1.5);
+	@include transform(translateX(500px) translateY(50px) scale(2,2) rotate(-90deg));
+}
+
+article p:nth-child(3) {
+	@include filter(drop-shadow(1px 1px 5px $red));
+}
+
+$variable: blue;
+
+@if $variable == red {
+	#riddle {
+		background-color: rgba(200,0,0,0.5);
+	}
+}@else {
+	#riddle {
+		background-color: rgba(0,200,0,0.5);
+	}
+}
+
+$prct-blue: 10%;
+
+@for $i from 1 through 8 {
+	article p:nth-child(#{$i}) {
+		background-color: mix($blue, $white, $prct-blue);
+	}
+	$prct-blue: $prct-blue + 10%;
+}
+
+// @import "compass/utilities/sprites";
+// @import "icons/*.png"
+// @include all-icons-sprites;
+
+// .icons {
+// 	.clock { @include icons-sprite(clock); }
+// 	.clock { @include icons-sprite(clock); }
+// 	.clock { @include icons-sprite(clock); }
+// 	.clock { @include icons-sprite(clock); }
+// }
+
+// .icons * {
+// 	height: 64px;
+// 	width: 64px;
+// }
+
+@import "compass/utilities/tables";
+
+$table-color: $blue;
+
+.baseball-stats {
+	table {
+		@include table-scaffolding;
+		@include inner-table-borders(5px, $table-color);
+		@include outer-table-borders(5px, $red);
+		@include alternating-rows-and-columns($main-green,$ash-gray,$alice-blue,$yellow);
+	}
+}

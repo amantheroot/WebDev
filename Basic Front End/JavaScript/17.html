@@ -1,0 +1,32 @@
+<html>
+    <head></head>
+    <body>
+            <div>
+                    Enter your Name :
+                    <input id="name" name="name" size="30" type="text" 
+                    onblur="isthefieldempty(this, document.getElementById('name_help'))"/>
+                    <span id="name_help"></span>
+            
+                  </div>
+        <script>
+            var custarray = ["Aman", "Rishabh", "Sameer", "Mohid", "Abiram"];
+            var getcust = function(index){
+                if(index > custarray.length){
+                    throw new RangeError("Index must be >= 0 and <= "+custarray.length)
+                }else{
+                    return custarray[index];
+                }
+            }
+
+            try {
+                document.write("Customer : ", getcust(7), "<br/>")
+            }
+
+            catch(ex){
+                if(ex instanceof RangeError){
+                    document.write(ex.message, "<br/>")
+                }
+            }
+        </script>
+    </body>
+</html>

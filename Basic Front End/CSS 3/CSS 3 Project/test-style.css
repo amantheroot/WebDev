@@ -1,0 +1,25 @@
+h1.shad {
+	text-shadow: 2px 2px 2px yellow;
+}
+h1.box {
+	color: yellow;
+	font-family: sans-serif;
+	text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+}
+
+div.sha{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	box-shadow: 10px 15px 20px gray;
+}
+
+.text {
+	white-space: nowrap;
+	margin-top: 50px;
+	border: 1px solid black;
+	height: 20px;
+	width: 500px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
